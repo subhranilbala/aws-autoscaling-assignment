@@ -1,6 +1,6 @@
 #!/bin/bash
-yum update -y
-yum install -y httpd
-systemctl start httpd
-systemctl enable httpd
-echo "Auto Scaling Demo AWS" > /var/www/html/index.html
+sudo yum update -y
+sudo yum install httpd -y
+sudo systemctl start httpd
+sudo systemctl enable httpd
+echo "Hello from Auto Scaling Instance" > /var/www/html/index.html
